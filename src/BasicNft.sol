@@ -7,9 +7,16 @@ import {ERC721} from "../lib/openzeppelin-contracts/contracts/token/ERC721/ERC72
 
 contract  BasicNft is ERC721 {
 
-
+    uint256 private s_tokenCounter;
+    
     constructor() ERC721("Dogie","Dog"){
-
+        s_tokenCounter =0;
     }
+
+    function tokenURI(uint256 tokenId) public view override returns (string memory) {
+        
+    }
+
+    
 
 }
