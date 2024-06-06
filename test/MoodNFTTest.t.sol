@@ -24,7 +24,7 @@ contract MoodNFTTest is Test{
         vm.deal(user,10e18);
     }
 
-    function testImage() public {
+    function () public {
         vm.prank(user);
         moodNft.mintNft();
         console.log(moodNft.tokenURI(0));
