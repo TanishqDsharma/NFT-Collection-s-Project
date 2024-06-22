@@ -4,7 +4,7 @@ pragma solidity  ^0.8.16;
 // Using openzeppilin package ERC721 contract
 import {ERC721} from "../lib/openzeppelin-contracts/contracts/token/ERC721/ERC721.sol";
 
-contract BasiNft is ERC721 {
+contract BasicNft is ERC721 {
 
     // This token counter will represent token id that NFT will be having
     uint256 private s_tokenCounter;
